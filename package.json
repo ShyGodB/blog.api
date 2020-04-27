@@ -1,0 +1,45 @@
+{
+  "name": "edtuina.api",
+  "version": "1.0.0",
+  "description": "the api for edtuina",
+  "main": "app.js",
+  "author": {
+    "name": "xueping"
+  },
+  "scripts": {
+    "lint": "eslint app.js src/",
+    "test-ci": "yarn lint && jest --coverage --runInBand --passWithNoTests",
+    "async_article": "node console prod article/asyncArticles",
+    "lint-fix": "eslint --fix app.js src/"
+  },
+  "dependencies": {
+    "ali-oss": "^6.5.1",
+    "co-body": "^5.2.0",
+    "echarts": "^4.5.0",
+    "excel-export": "^0.5.1",
+    "gm": "^1.23.0",
+    "iconv-lite": "^0.4.24",
+    "ipip-datx": "^0.2.2",
+    "jpush-async": "^4.0.3",
+    "koa": "^2.5.1",
+    "koa-send": "^5.0.0",
+    "koa-validate": "^1.0.7",
+    "koa2-cors": "^2.0.6",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.1",
+    "mongoose-sequence": "^5.2.1",
+    "multiparty": "^4.1.3",
+    "mysql": "^2.15.0",
+    "network": "^0.4.1",
+    "node-schedule": "^1.3.2",
+    "pino": "5.12.6",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "urllib": "^2.34.0",
+    "watch": "^1.0.2",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
